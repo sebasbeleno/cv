@@ -8,7 +8,7 @@ import {
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Sebastian Beleño",
+  name: "Sebastian Herrera Beleño",
   initials: "SB",
   location: "Medellín, Colombia",
   locationLink: "https://www.google.com/maps/place/Medell%C3%ADn,+Antioquia/",
