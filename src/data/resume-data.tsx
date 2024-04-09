@@ -1,278 +1,204 @@
 import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
   ClevertechLogo,
   ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
   JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
   ParabolLogo,
   TastyCloudLogo,
-  YearProgressLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Sebastian Beleño",
+  initials: "SB",
+  location: "Medellín, Colombia",
+  locationLink: "https://www.google.com/maps/place/Medell%C3%ADn,+Antioquia/",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "React Native Engineer with a obsession for highly interactive and efficient mobile apps.",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+    "Passionate React Native Developer with over 4 years of experience in building and shipping mobile and web applications from 0 to 1. With a strong background in computer science and a focus on user experience. Led the development of several successful products and ensuring the delivery of high quality software, streamlined the developmment process and implemented efficient data solutions.",
+  avatarUrl: "https://avatars.githubusercontent.com/u/39771116?v=4",
+  personalWebsiteUrl: "https://sebasbeleno.vercel.app/",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "sebasbeleno15@gmail.com",
+    tel: "+573117585689",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/sebasbeleno/",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/sebasbeleno/",
         icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "EAFIT University",
+      degree: "Bachelor's degree in Computer Science",
+      start: "2020",
+      end: "Present",
     },
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
+      company: "Perficient",
+      link: "https://www.perficient.com/",
       badges: ["Remote"],
-      title: "Senior Full Stack Developer",
+      title: "React Native Developer",
       logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
-      description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+      start: "July 2022",
+      end: "April 2024",
+      description: [
+        {
+          type: "paragraph",
+          content:
+            "Developed and shipped large scale mobile applications used by over 1 million users. Collaborated with cross fuctional teams and stakeholders to deliver high quality software. Led the design and implementation of scalable architecture of big features like Visual Search for the ACE Hardware App and the integration of new payments methods for the Namutek Ka$h App.",
+        },
+        {
+          type: "paragraph",
+          content: "Collaborated directly with clients on project progress, delivering clear and concise presentations. Successfully resolved critical client issues, ensuring project timelines were met.",
+        },
+        {
+          type: "paragraph",
+          content: "Co-created and designed the React Native learning path for new hires. Mentored junior developers on best practices and coding standards. Streamlined the technical test for applicants, reducing completion time by 20 minutes and increasing the effectiveness of the test for applicants, resulting in faster and more accurate evaluation.",
+        },
+        {
+          type: "list",
+          title: "Clients",
+          customBullet: "•",
+          content: [
+            "Enterprise Mobility - Alamo Mobile App (Mobility)",
+            "Namutek - Ka$h Mobile App (Fintech)",
+            "ACE Hardware - ACE Customer Mobile App (Retail)",
+          ],
+        },
+        {
+          type: "paragraph",
+          content:
+            "Technologies used: React Native, TypeScript, Fastlane, Supabase, Firebase, Redux, Android, iOS, Kotlin, Swift, AppCenter, CodeMagic, Bitrise",
+        },
+      ],
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
+      company: "Biva",
+      link: "https://www.biva.co/",
       badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
+      title: "React Native Developer",
       logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
+      start: "2021",
+      end: "2022",
+      description: [
+        {
+          type: "paragraph",
+          content:
+            "Biva it's a mobile app that helps people to increase their aderence to their treatment. I was the lead React Native Developer and I was in charge of the development of the Android and iOS apps. Worked on new features like a custom CMS from scratch and a new UI for the app. Technologies used: React Native, TypeScript, Firebase",
+        },
+      ],
     },
     {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
+      company: "DatBig",
       badges: [],
-      title: "Android Developer → Lead Android Developer",
+      title: "Full Stack Developer",
       logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
+      start: "2020",
+      end: "2021",
+      description: [
+        {
+          type: "paragraph",
+          content:
+            "DatBig was a startup that I co-founded. We created custom software for companies and universities. We focused on big data and machine learning projects. I was in charge of the development of the web apps and the backend. Technologies used: React, Next.js, TypeScript, GraphQL, PostgreSQL, Firebase, Node.JS, Django, AWS",
+        },
+      ],
+    },
+  ],
+  achievements: [
+    {
+      title:
+        "Oracle RedBull Racing Racing To The Cloud Hackathon | Second Place.",
+      logo: TastyCloudLogo,
       description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
+        "I was part of a team that won the second place in the Racing To The Cloud Hackathon. We researched across multiple cloud databases from the Formula 1 and we created a dashboard that showed key metrics from the best and worst matches. Showing this data in a dashboard helped the oracle team to make better decisions on races. We used Oracle Cloud to host the dashboard and the database.",
+      date: "2023",
     },
     {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
+      title: "Software Development Hackathon | First Place.",
+      logo: TastyCloudLogo,
+      description:
+        "I was part of a team that won the first place in the Software Development Hackathon of the Technology and Innovation student club of the EAFIT University. We created a web app that helped students to track and book their supplementary exams in a more efficient way. Automating the process of booking exams saved the university a lot of money and time.",
+      date: "2023",
+    },
+    {
+      title:
+        "Pedagogical Meeting of Education Technical High School in Computer Science | Second Place.",
+      logo: TastyCloudLogo,
+      description:
+        "With my team, we won the second place in the Pedagogical Meeting of Education Technical High School in Computer Science. We created a web app that helped students from my high schol to make better decisions on their career path. We created a quiz that helped students to find their strengths and weaknesses. We used this data to recommend them a career path in base of the high school possibilities.",
+      date: "2020",
     },
   ],
   skills: [
     "JavaScript",
     "TypeScript",
-    "React/Next.js/Remix",
-    "Node.js",
+    "React Native",
+    "React/Next.js",
     "GraphQL",
-    "Relay",
-    "WebRTC",
+    "Android",
+    "Kotlin",
+    "iOS",
+    "Swift",
+    "Supabase",
+    "Firebase",
+    "Redux",
+    "Fastlane",
   ],
   projects: [
     {
-      title: "Consultly",
+      title: "Mony",
       techStack: [
         "Side Project",
         "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+        "React Native",
+        "OneSignal",
+        "Supabase",
+        "Fastlane",
       ],
-      description: "A platform to build and grow your online business",
+      description:
+        "Personal finance app for iOS and Android. Track your expenses, create budgets and more",
       logo: ConsultlyLogo,
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "Mony App",
+        href: "https://apps.apple.com/us/app/mony-finanzas-personales/id6448954678",
       },
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-      description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
+      title: "Report.gg",
       techStack: [
-        "Full Stack Developer",
+        "Side Project",
         "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "React/Next.js",
+        "PostgreSQL",
+        "Firebase",
       ],
       description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
-      link: {
-        label: "github.com",
-        href: "https://parabol.co/",
-      },
+        "League of Legends stats and analytics website. Track your progress, compare with friends and more",
+      logo: ConsultlyLogo,
     },
     {
-      title: "Evercast",
+      title: "Auriga",
       techStack: [
-        "Lead Frontend Developer",
-
+        "Side Project",
         "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "React/Next.js",
+        "PostgreSQL",
+        "Supabase",
+        "Tailwind CSS",
       ],
       description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
-      link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
-      },
-    },
-    {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
-      link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
-      },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
+        "Loan management system for a microfinance company. Manage clients, loans, payments and more",
+      logo: ConsultlyLogo,
     },
   ],
 } as const;

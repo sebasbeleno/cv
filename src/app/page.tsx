@@ -99,7 +99,7 @@ export default function Page() {
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="text-xl font-bold">Professional and Business Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
@@ -132,7 +132,30 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {work.description}
+                    {work.description.map((description, index) => {
+                      const { type } = description;
+
+                      if (type === "paragraph") {
+                        return <p key={index} className="mb-2">{description.content}</p>;
+                      }
+
+                      if (type === "list") {
+                        const { title, customBullet } = description;
+
+                        return (
+                          <div key={index} className="mb-2">
+                            <h5 className="font-semibold text-lg">{title}</h5>
+                            <ul className="list-disc list-inside">
+                              {description.content.map((item, index) => (
+                                <li key={index} className={customBullet ? "list-none" : ""}>
+                                  <span className="font-mono">{customBullet}</span> {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )
+                      }
+                    })}
                 </CardContent>
               </Card>
             );
@@ -158,6 +181,30 @@ export default function Page() {
             );
           })}
         </Section>
+
+        <Section>
+          <h2 className="text-xl font-bold">Achievements</h2>
+          {RESUME_DATA.achievements.map((education) => {
+            return (
+              <Card key={education.title}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="font-semibold leading-none">
+                      {education.title}
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {education.date}
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="mt-2">
+                  {education.description}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+
         <Section>
           <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
